@@ -2,7 +2,7 @@
 
 /**
  * main - tests function that printss if integer is negative or positive
- * Retern: #
+ * Return: 0
  */
 
 int main(void)
