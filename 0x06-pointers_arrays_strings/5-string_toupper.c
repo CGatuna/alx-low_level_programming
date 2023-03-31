@@ -6,7 +6,7 @@
  */
 char *string_toupper(char *)
 {
-int string_legth;
+int string_length;
 string_length = 0;
 while (x[string_length] != '\0')
 {
