@@ -1,6 +1,10 @@
 #include "main.h"
 /**
+<<<<<<< HEAD
  **string_toupper - changes all lowercase to uppercase.
+=======
+ * *string_toupper - changes all lowercase to uppercase.
+>>>>>>> f341a4289d31ffe6d9e91b33383a14c14579ccf7
  *@x: pointer to string.
  *Return: uppercase string.
  */
