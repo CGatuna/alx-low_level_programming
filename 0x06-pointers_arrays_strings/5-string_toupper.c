@@ -4,7 +4,7 @@
  *@x: pointer to string.
  *Return: uppercase string.
  */
-char *string_toupper(char *)
+char *string_toupper(char *x)
 {
 int string_length;
 string_length = 0;
