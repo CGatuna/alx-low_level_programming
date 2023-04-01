@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *cap_string - capitalizes words of a string.
- *@s: pointer to string.
- *Return: pointer to s.
- */
+*cap_string - capitalizes words of a string.
+*@s: pointer to string.
+*Return: pointer to s.
+*/
 char *cap_string(char *s)
 {
 int string_count;
@@ -14,7 +14,7 @@ if (s[0] <= 97 && s[0] <= 122)
 {
 s[0] = s[0] - 32;
 }
-if (s[string_count] == ' ' || s[string_count] == '\t' || s[string_count] == '\n' || s[string_count] == ',' || s[string_count] == ';' || s[string_count] == '.' || 
+if (s[string_count] == '' || s[string_count] == '\t' || s[string_count] == '\n' || s[string_count] == ',' || s[string_count] == ';' || s[string_count] == '.' || 
 s[string_count] == '.' || s[string_count] == '!' || s[string_count] == '?' || s[string_count] == '"' || s[string_count] == '(' || s[string_count] == ')' ||
 s[string_count] == '{' || s[string_count] == '}')
 {
