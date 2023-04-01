@@ -4,7 +4,7 @@
  *@s: pointer to string.
  *Return: pinter to s.
  */
-char *cap_strinf(char *s)
+char *cap_string(char *s)
 {
 int string_count;
 string_count = 0;
