@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- **cap_string - capitalizes words of a string.
+ *cap_string - capitalizes words of a string.
  *@s: pointer to string.
- *Return: pinter to s.
+ *Return: pointer to s.
  */
 char *cap_string(char *s)
 {
@@ -20,7 +20,7 @@ s[string_count] == '{' || s[string_count] == '}')
 {
 if (s[string_count + 1] >= 97 && s[string_count + 1] <= 122)
 {
-s[string_count + 1] = s[string_count + 1] -32;
+s[string_count + 1] = s[string_count + 1] - 32;
 }
 }
 string_count++;
