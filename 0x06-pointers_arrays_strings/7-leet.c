@@ -7,7 +7,7 @@
  *Letters t and T are replaced by 7
  *Letters l and L are replaced by 1
  *@s: pointer to string.
- *Return: pinter to s.
+ *Return: pointer to s.
  */
 char *leet(char *s)
 {
