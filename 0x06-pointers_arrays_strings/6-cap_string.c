@@ -1,17 +1,29 @@
 #include "main.h"
 /**
- *_strcmp - compars two strings.
- *@s1: pointer to first string.
- *@s2: pointer to second string.
- *Return value less than 0if the string is less than the other, value greater than 0 if the string is greater than the other & 0 if strings are equal*/
-int _strcmp(char *s1, char *s2)
+ *cap_string - capitalizes words of a string.
+ *@s: pointer to string.
+ *Return: pinter to s.
+ */
+char *cap_strinf(char *s)
 {
-int counter, compare_value;
-counter = 0;
-while (s1[counter] == s2[counter] && s1[counter] != '\0')
+int string_count;
+string_count = 0;
+while (s[string_count] != '\0')
 {
-counter++;
+if (s[0] <= 97 && s[0] <= 122)
+{
+s[0] = s[0] - 32;
 }
-compare_value = s1[counter] - s2[counter];
-return (compare_value);
+if (s[string_count] == ' ' || s[string_count] == '\t' || s[string_count] == '\n' || s[string_count] == ',' || s[string_count] == ';' || s[string_count] == '.' || 
+s[string_count] == '.' || s[string_count] == '!' || s[string_count] == '?' || s[string_count] == '"' || s[string_count] == '(' || s[string_count] == ')' ||
+s[string_count] == '{' || s[string_count] == '}')
+{
+if (s[string_count + 1] >= 97 && s[string_count + 1] <= 122)
+{
+s[string_count + 1] = s[string_count + 1] -32;
+}
+}
+string_count++;
+}
+return (s);
 }
