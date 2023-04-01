@@ -1,29 +1,32 @@
 #include "main.h"
 /**
- *cap_string - capitalizes words of a string.
+ *leet - encodes string to 1337.
+ *Letters a and A are replaced by 4
+ *Letters e and E are replaced by 3
+ *Letters o and O are replaced by 0
+ *Letters t and T are replaced by 7
+ *Letters l and L are replaced by 1
  *@s: pointer to string.
  *Return: pinter to s.
  */
-char *cap_strinf(char *s)
+char *leet(char *s)
 {
-int string_count;
-string_count = 0;
-while (s[string_count] != '\0')
+int string_length, leetCount;
+char leetLetters[] = "aAeEoOtTlL";
+char leetNums = "4433007711";
+string_length = 0;
+while (s[string_length] != '\0')
 {
-if (s[0] <= 97 && s[0] <= 122)
+leetCount = 0;
+while (leetCount < 10)
 {
-s[0] = s[0] - 32;
+if (leetLetters[leetCount] == s[string_length])
+{
+s[string_lenth] = leetNums[leetCount];
 }
-if (s[string_count] == ' ' || s[string_count] == '\t' || s[string_count] == '\n' || s[string_count] == ',' || s[string_count] == ';' || s[string_count] == '.' || 
-s[string_count] == '.' || s[string_count] == '!' || s[string_count] == '?' || s[string_count] == '"' || s[string_count] == '(' || s[string_count] == ')' ||
-s[string_count] == '{' || s[string_count] == '}')
-{
-if (s[string_count + 1] >= 97 && s[string_count + 1] <= 122)
-{
-s[string_count + 1] = s[string_count + 1] -32;
+leetCount++;
 }
-}
-string_count++;
+string_lenth++;
 }
 return (s);
 }
