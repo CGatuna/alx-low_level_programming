@@ -4,10 +4,12 @@
 *swap_int - swaps value of two integers.
 *@a: first swaped.
 *@b: second swaped.
-*Return: nothing.
+*Return: 0.
 */
 void swap_int(int *a, int *b)
 {
+int change;
+change = *a;
 *a = *b;
-*b = *a;
+*b = change;
 }
