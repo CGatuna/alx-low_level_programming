@@ -5,7 +5,7 @@
 *@str: string to be printed.
 *Return: string and new line.
 */
-void _putchar(void);
+void _putchar();
 void _puts(char *str)
 {
 int n = 0;
