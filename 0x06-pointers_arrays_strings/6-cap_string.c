@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-**cap_string - Capitalizes words of a string.
+*cap_string - Capitalizes words of a string.
 *@str: string to be capitalized.
 *Return: capitalized string.
 */
@@ -26,7 +26,7 @@ if (str[index - 1] == ' ' ||
     str[index - 1] == '}' ||
     index == 0)
     str[index] -= 32;
-    index++;
+index++;
 }
 return (str);
 }
