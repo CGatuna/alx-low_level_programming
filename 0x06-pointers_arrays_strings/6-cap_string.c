@@ -24,5 +24,5 @@ s[string_count + 1] = s[string_count + 1] - 32;
 }
 string_count++;
 }
-return (s);
+return(s);
 }
