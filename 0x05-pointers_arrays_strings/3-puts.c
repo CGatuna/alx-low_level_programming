@@ -4,7 +4,6 @@
 *@str: string to be printed.
 *Return: void.
 */
-void _putchar();
 void _puts(char *str)
 {
 int n = 0;
