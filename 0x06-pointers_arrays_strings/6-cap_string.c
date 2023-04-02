@@ -19,7 +19,7 @@ s[string_count] == '{' || s[string_count] == '}')
 {
 if (s[string_count + 1] >= 97 && s[string_count + 1] <= 122)
 {
-s[string_count + 1] = s[string_count + 1] - 32;
+s[string_count + 1] = s[string_count + 1] -32;
 }
 }
 string_count++;
