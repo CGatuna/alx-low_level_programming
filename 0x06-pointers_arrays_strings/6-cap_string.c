@@ -4,7 +4,7 @@
 *@s: string to be capitalized.
 *Return: capitalized string.
 */
-char *cap_stri(char *s)
+char *cap_string(char *s)
 {
 int string_count;
 string_count = 0;
@@ -19,10 +19,10 @@ s[string_count] == '{' || s[string_count] == '}')
 {
 if (s[string_count + 1] >= 97 && s[string_count + 1] <= 122)
 {
-s[string_count + 1] = s[string_count + 1] -32;
+s[string_count + 1] = s[string_count + 1] - 32;
 }
 }
 string_count++;
 }
-return(s);
+return (s);
 }
