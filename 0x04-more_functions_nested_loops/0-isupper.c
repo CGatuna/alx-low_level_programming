@@ -4,7 +4,7 @@
 *@c: the num ber to be checked.
 *Return: 1 for upper letter and 0 for otherwise.
 */
-int _isupper(int c);
+int _isupper(int c)
 {
    if (c >= 65 && c <= 90)
    {
